@@ -1,8 +1,11 @@
-# React + Vite
+# ViBlog 📝 - A Blogging Platform
+🚀 Catch the Vibe, Find Your Tribe!
+ViBlog is a modern, sleek, and interactive blogging platform built with Vite + React, powered by Appwrite Database, and styled using Tailwind CSS. With dark mode support, a seamless blog upload experience, and interactive features
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Tech Stack
+Frontend: Vite + React ⚛️
+Backend & Database: Appwrite 📦
+Styling: Tailwind CSS 🎨
+State Management: Redux
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
