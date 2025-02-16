@@ -1,0 +1,133 @@
+#root {
+  max-width: 100%;
+  max-height: max-content;
+  margin: 0 0;
+  padding: 0;
+  text-align: center;
+}
+#root {
+  --bg-neutral-950: #1a1a1a;
+  --gradient-start: rgba(120, 119, 198, 0.3);
+  --gradient-end: rgba(255, 255, 255, 0);
+}
+
+.background-gradient{
+  position: absolute;
+  top: 0;
+  z-index: -2;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--bg-neutral-950);
+  background-image: radial-gradient(
+    ellipse 80% 80% at 50% -20%,
+    var(--gradient-start),
+    var(--gradient-end)
+  );
+}
+
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.toggler {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+
+.toggler p {
+  font-size: 0.625rem;
+}
+
+.toggler--slider {
+  width: 40px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 2rem;
+  margin-inline: 8px;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid black;
+  transition: background-color 0.3s ease;
+}
+
+.toggler--slider.light {
+  border-color: #fff;
+  background-color: #333;
+}
+
+.toggler--slider--circle {
+  width: 16px;
+  height: 16px;
+  background-color: black;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.toggler--slider.light .toggler--slider--circle {
+  transform: translateX(20px);
+  background-color: #f8f8f8;
+}
+
+.toggler--dark {
+  color: #f7f7f7;
+}
+
+.toggler--light {
+  color: #6b6b6b;
+}
+
+nav.light .toggler--dark {
+  color: #9b9b9b;
+}
+
+nav.light .toggler--light {
+  color: #ddd;
+}
+
+.dark-button {
+  background-color: #333;
+  color: #f7f7f7;
+  border: none;
+  cursor: pointer;
+}
+nav.light button{
+  background-color: #719baf;
+  color:black;
+
+}
